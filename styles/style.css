@@ -152,7 +152,6 @@ nav ul li {
 
 .standard {
   background-image: url("../assets/bg.png");
-
 }
 
 .section-title {
@@ -229,7 +228,6 @@ nav ul li {
     rgb(255, 255, 255);
 }
 .card-btn {
-  
   font-family: Quicksand;
   font-size: 15.09px;
   font-weight: 700;
@@ -239,30 +237,113 @@ nav ul li {
   border: none;
   background-color: white;
 }
-.crd-btn-1{
+.crd-btn-1 {
   color: rgb(100, 200, 255);
 }
-.crd-btn-2{
+.crd-btn-2 {
   color: rgb(240, 170, 0);
 }
-.crd-btn-3{
+.crd-btn-3 {
   color: rgb(135, 0, 255);
 }
 
-.button-side{
+.button-side {
   display: flex;
   gap: 10px;
   justify-content: center;
   padding-bottom: 60px;
 }
 
-.btn-side{
+.btn-side {
   width: 60px;
   height: 60px;
   border-radius: 30px;
   background: rgb(254, 163, 1);
   color: white;
   border: none;
+}
+
+/* section-story style */
+
+.section-2 {
+  background: url("../assets/bg.png"),
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.story {
+  width: 80vw;
+  margin: 0 auto;
+}
+
+.sty-crd-1 {
+  grid-area: sty-crd-1;
+  width: 37.5vw;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.sty-crd-1 img {
+  width: 100%;
+  border-radius: 16px 16px 0px 0px;
+}
+.sty-crd-title-1 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 38.35px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 36px 99px 51px 38px;
+}
+.sty-crd-1-description {
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 0 68px 34px 38px;
+}
+
+.date {
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 15.34px;
+  font-weight: 500;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.date-1 {
+  border-radius: 47.93px;
+  background: rgb(60, 216, 232);
+  position: relative;
+  top: -19px;
+  left: 38px;
+  padding: 13px;
+}
+
+.sty-crd-2 {
+  grid-area: sty-crd-2;
+}
+.sty-crd-3 {
+  grid-area: sty-crd-3;
+}
+.sty-crd-4 {
+  grid-area: sty-crd-4;
+}
+.sty-crd-5 {
+  grid-area: sty-crd-5;
+}
+.story-card-container {
+  display: grid;
+  grid-template-areas:
+    "sty-crd-1   sty-crd-2   sty-crd-3"
+    "sty-crd-1   sty-crd-4   sty-crd-5";
+  gap: 20px;
 }
 
 /* media query */
@@ -319,13 +400,12 @@ nav ul li {
     flex-direction: column;
   }
 
-  .section-1{
+  .section-1 {
     display: flex;
     justify-content: center;
     margin-left: 40px;
   }
-  .button-side{
+  .button-side {
     display: none;
   }
-
 }
