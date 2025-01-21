@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -275,13 +276,21 @@ nav ul li {
   margin: 0 auto;
 }
 
+.sty-crd-2,
+.sty-crd-3,
+.sty-crd-4,
+.sty-crd-5 {
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
 .sty-crd-1 {
   grid-area: sty-crd-1;
   width: 37.5vw;
   border-radius: 16px;
   background: rgb(255, 255, 255);
 }
-.sty-crd-1 img {
+.story-card-container img {
   width: 100%;
   border-radius: 16px 16px 0px 0px;
 }
@@ -326,6 +335,36 @@ nav ul li {
   padding: 13px;
 }
 
+.date-2,
+.date-4,
+.date-5 {
+  border-radius: 47.93px;
+  background: rgb(149, 178, 38);
+  position: relative;
+  top: -19px;
+  left: 37px;
+  padding: 12px;
+}
+.date-3 {
+  border-radius: 47.93px;
+  background: rgb(93, 88, 240);
+  position: relative;
+  top: -19px;
+  left: 37px;
+  padding: 12px;
+}
+
+.sty-crd-title {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 15.34px;
+  font-weight: 700;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin: 33px 54px 33px 37px;
+}
+
 .sty-crd-2 {
   grid-area: sty-crd-2;
 }
@@ -343,7 +382,27 @@ nav ul li {
   grid-template-areas:
     "sty-crd-1   sty-crd-2   sty-crd-3"
     "sty-crd-1   sty-crd-4   sty-crd-5";
-  gap: 20px;
+  gap: 19px;
+  margin-bottom: 80px;
+}
+
+.view {
+  width: 197px;
+  height: 50px;
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin: 0 auto;
+  
+}
+.view-btn{
+  padding-bottom: 60px;
 }
 
 /* media query */
@@ -398,6 +457,7 @@ nav ul li {
 
   .curriculum-cards {
     flex-direction: column;
+    width: 99vw;
   }
 
   .section-1 {
@@ -408,4 +468,13 @@ nav ul li {
   .button-side {
     display: none;
   }
+
+  /* section-2 story */
+  .story-card-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sty-crd-1{
+    display: none;
+  }
+
 }
