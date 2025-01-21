@@ -436,6 +436,9 @@ nav ul li {
   text-align: left;
   width: 399.02px;
 }
+.footer-title-head img{
+  height: 70px;
+}
 
 .ttl {
   color: rgb(255, 255, 255);
@@ -557,5 +560,6 @@ nav ul li {
   .ttl{
     margin-top: 35px;
   }
+
   
 }
