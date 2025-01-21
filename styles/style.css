@@ -152,7 +152,7 @@ nav ul li {
 /* section- standard styles */
 
 .standard {
-  background-image: url("../assets/bg.png");
+  background-image: url("../assets/bg-2.png");
 }
 
 .section-title {
@@ -267,7 +267,7 @@ nav ul li {
 /* section-story style */
 
 .section-2 {
-  background: url("../assets/bg.png"),
+  background-image: url("../assets/bg-2.png"),
     linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
 }
 
@@ -399,10 +399,68 @@ nav ul li {
   letter-spacing: 0%;
   text-align: center;
   margin: 0 auto;
-  
 }
-.view-btn{
+.view-btn {
   padding-bottom: 60px;
+}
+
+/* footer style */
+
+.footer {
+  background-color: rgb(1, 172, 253);
+  padding: 123px 228px 174px 140px;
+  justify-content: space-between;
+}
+.footer-title-head {
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 35px;
+}
+
+.footer-title {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 42.14px;
+  font-weight: 700;
+  line-height: 39.51px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer-title-description {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  width: 399.02px;
+}
+
+.ttl {
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 32px;
+}
+.footer-navbar ul li {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 20px;
+}
+
+.social img {
+  margin-right: 10px;
 }
 
 /* media query */
@@ -470,11 +528,34 @@ nav ul li {
   }
 
   /* section-2 story */
-  .story-card-container{
-    grid-template-columns: repeat(2, 1fr);
+
+  .section-2 {
+    padding-right: 65px;
   }
-  .sty-crd-1{
+
+  .story-card-container {
+    grid-template-columns: repeat(1fr, 1fr);
+    gap: 20px;
+  }
+  .sty-crd-1 {
     display: none;
   }
 
+  .date {
+    width: 103.91px;
+    height: 22.83px;
+    font-size: 9.13px;
+    line-height: 17.12px;
+  }
+
+/* footer style */
+  .footer{
+    flex-direction: column;
+    padding: 66px 12px 60px 22px;
+    width: 100vw;
+  }
+  .ttl{
+    margin-top: 35px;
+  }
+  
 }
