@@ -466,6 +466,14 @@ nav ul li {
   margin-right: 10px;
 }
 
+marquee {
+  color: rgb(50, 47, 47);
+  font-family: Quicksand;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: left;
+}
+
 /* media query */
 
 @media screen and (max-width: 576px) {
@@ -532,17 +540,22 @@ nav ul li {
 
   /* section-2 story */
 
-  .section-2 {
-    padding-right: 65px;
-  }
-
-  .story-card-container {
-    grid-template-columns: repeat(1fr, 1fr);
-    gap: 20px;
-  }
   .sty-crd-1 {
     display: none;
   }
+  .section-2 {
+    /* padding-right: 65px; */
+    width: 108vw !important;
+
+  }
+
+  .story-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    position: relative;
+    justify-content: center;
+  }
+
 
   .date {
     width: 103.91px;
